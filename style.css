@@ -18,7 +18,8 @@
 }
 
 @media (max-width:768px) {
-  .hero { text-align: center;
+  .hero {
+    text-align: center;
   }
 }
 .main-content {
@@ -35,18 +36,18 @@
   display: flex;
 }
 .list {
-  margin:0;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 .item, .heading {
-  list-style:none;
+  list-style: none;
 }
-.input,.button{
-  outline:none;
+.input, .button {
+  outline: none;
 }
 .button {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
@@ -100,7 +101,6 @@
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,18 +118,18 @@
   font-size: 18px;
   width: 226px;
 }
-.item >    .input[type="text"] {
+.item > .input[type="text"] {
   width: 226px
 }
-.item > .button.delete:hover {
+.item > .button .delete:hover {
   color: #cf2323;
 }
-.button.delete .icon {
+.button .delete .icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.button.delete .icon:hover {
+.button .delete .icon:hover {
   transform: rotateZ(0);
 }
 
@@ -141,14 +141,14 @@
 
 /* Edit Task */
 .list .item .input[type=text] {
-  display:none
+  display: none
 }
 
-.list .item.edit-mode .input[type=text] {
-  display:inline-block;
-  width:224px
+.list .item .edit-mode .input[type=text] {
+  display: inline-block;
+  width: 224px
 }
 
-.list .item.edit-mode .label {
-  display:none;
+.list .item .edit-mode .label {
+  display: none;
 }
