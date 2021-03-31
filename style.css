@@ -10,12 +10,10 @@
   display: block;
   text-align: right;
 }
-.hero
-.hero-image {
+.hero__image {
   width: 100%;
 }
-.hero
-.more-inf {
+.hero__more-info {
   font-family: fantasy, cursive;
 }
 
@@ -63,7 +61,7 @@
 }
 /* Heading */
 .heading,
-.label[for="new-task"] {
+.label__new-task {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -72,7 +70,7 @@
   margin: 0;
   text-transform: uppercase;
 }
-.input[type="text"] {
+.text__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -84,24 +82,24 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
-.input[type="text"]:focus {
+.text__input:focus {
   color: #333;
 }
 
 /* New Task */
-.label[for="new-task"] {
+.label__new-task {
   display: block;
   margin: 0 0 20px;
 }
-.input#new-task {
+.input__new-task {
   width: 318px;
 }
-.paragraph > .button:hover {
+.button__new-task:hover {
   color: #0fc57c;
 }
 
 /* Task list */
-.item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -109,33 +107,31 @@
   justify-content: space-between;
   align-items: center;
 }
-.item {
+.list__item {
   vertical-align: middle;
 }
 
-.item > .input[type="checkbox"] {
+.list__item_check {
   margin: 0 10px;
 }
-.item > .label {
+.list__item_label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.item > .input[type="text"] {
+.list__item_input {
   width: 226px;
 }
-.item > .button.delete:hover {
-  color: #cf2323;
+.delete-btn__icon:hover {
+  fill: #cf2323;
 }
-.button.delete
-.icon {
+.delete-btn__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.button.delete
-.icon:hover {
+.delete-btn__icon:hover {
   transform: rotateZ(0);
 }
 
@@ -146,21 +142,18 @@
 }
 
 /* Edit Task */
-.list
-.item
-.input[type=text] {
+.list__item
+.text__input {
   display: none;
 }
 
-.list
-.item.edit-mode
-.input[type=text] {
+.list__item.edit-mode
+.text__input {
   display: inline-block;
   width: 224px;
 }
 
-.list
-.item.edit-mode
+.list__item.edit-mode
 .label {
   display: none;
 }
